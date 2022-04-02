@@ -1,0 +1,23 @@
+{%extends 'admin/master.html'%}
+{%block body%}
+<h1>Welcome administrator</h1>
+<p>
+    You can manage your website content here.
+</p>
+<button onclick="home()">
+    Back to home
+</button>
+<button>
+
+    <a href="/stop">Stop server</a>
+</button>
+<script>
+    function home() {
+        // prompt to confirm
+        var r = confirm("Are you sure you want to go back to the home page?");
+        if (r == true) {
+            window.location.href = "{{url_for('home')}}";
+        }
+    }
+</script>
+{%endblock%}

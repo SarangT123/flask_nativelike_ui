@@ -1,0 +1,286 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Template</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,400i,500,700');
+
+    /* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+    /* 
+℘ąŋƙąʝ ɖɧıɱąŋ
+*/
+
+    body {
+        background: #fff;
+        color: #414141;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        overflow-x: hidden;
+        -webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
+        -webkit-font-smoothing: antialiased !important;
+    }
+
+    a {
+        text-decoration: none;
+        -ms-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        outline: medium none;
+        text-decoration: none;
+    }
+
+    *:focus {
+        outline: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    strong,
+    b {
+        font-weight: 700;
+    }
+
+    i,
+    em {
+        font-style: italic;
+    }
+
+    .clear {
+        border: 0;
+        clear: both;
+        height: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-weight: normal;
+        margin: 0;
+    }
+
+    input,
+    textarea {
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    /**** NAV ****/
+    nav.navbar-default {
+        background-color: rgba(0, 0, 0, 0.28);
+        border-color: rgba(0, 0, 0, 0.05);
+        -ms-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav.navbar-default.affix {
+        background-color: #222;
+        -ms-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav.navbar-default .navbar-brand {
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    nav.navbar-default .navbar-brand:focus,
+    nav.navbar-default .navbar-brand:hover {
+        color: #fff !important;
+        background-color: transparent;
+    }
+
+    nav.navbar-default .navbar-nav>li>a {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    nav.navbar-default .navbar-nav>li>a:focus,
+    nav.navbar-default .navbar-nav>li>a:hover {
+        color: #F05F40;
+        background-color: transparent;
+    }
+
+    nav.navbar-default .navbar-nav li a.active,
+    nav.navbar-default .navbar-nav li a.active:focus,
+    nav.navbar-default .navbar-nav li a.active:hover {
+        color: #F05F40;
+        background-color: transparent;
+    }
+
+
+    /**** NAV END ****/
+    /**** HEADER ****/
+    header {
+        min-height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+    }
+
+    header,
+    header .header-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 0 50px;
+        z-index: 10;
+    }
+
+    header .header-content .header-content-inner {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.41);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .header-content-inner h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.05em;
+    }
+
+    .header-content-inner h1:after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        margin: 20px auto 0;
+        background: #F05F40;
+    }
+
+    .header-content-inner p {
+        font-size: 22px;
+        line-height: 1.8;
+        color: #e4e4e4;
+    }
+
+    /**** HEADER END ****/
+    /**** ABOUT ****/
+
+    .btn-default-new {
+        background: #c34d34;
+        border-radius: 30px;
+        border: solid 3px #c34d34;
+        color: #ffffff;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family: 'Roboto', sans-serif;
+        padding: 0 25px;
+        line-height: 3.1;
+        margin-top: 30px;
+        letter-spacing: 0.05em;
+        -ms-transition: all 0.6s ease-in-out;
+        -webkit-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .btn-default-new:hover,
+    .btn-default-new:focus {
+        background: #fff;
+        color: #c34d34;
+        border-color: #c34d34;
+    }
+</style>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+    <!-- <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="#">Bootstrap</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <header style="background-image:url('http://sf.co.ua/15/11/wallpaper-1ee175.jpg');">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Flask UI Template</h1>
+                <p>Use flask and python to make native gui apps</p>
+                <a href="{{url_for('login')}}" class="btn btn-default-new">Login</a>
+                <a href="{{url_for('register')}}" class="btn btn-default-new">Register</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
